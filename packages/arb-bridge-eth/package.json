@@ -29,6 +29,7 @@
     "migrate:ropsten": "buidler deploy --network ropsten",
     "migrate:rinkeby": "buidler deploy --network rinkeby",
     "migrate:kovan": "buidler deploy --network kovan",
+    "migrate:rsktestnet": "buidler deploy --network rsktestnet --export bridge_eth_addresses.json",
     "migrate:geth": "rm -rf deployments/parity && buidler deploy --network parity",
     "run:local:geth": "./scripts/run-geth && yarn migrate:geth",
     "flatten": "buidler flatten > arbitrum_flat.sol",
