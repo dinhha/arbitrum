@@ -18,10 +18,10 @@
 import { Signer, BigNumber, ethers, ContractReceipt } from 'ethers'
 import { L1Bridge } from './l1Bridge'
 import { L2Bridge } from './l2Bridge'
-import { BridgeFactory } from './abi/BridgeFactory'
-import { OutboxFactory } from './abi/OutboxFactory'
+import { Bridge__factory } from './abi/factories/Bridge__Factory'
+import { Outbox__factory } from './abi/factories/Outbox__Factory'
 import { Outbox } from './abi/Outbox'
-import { OutboxEntryFactory } from './abi/OutboxEntryFactory'
+import { OutboxEntry__factory } from './abi/factories/OutboxEntry__Factory'
 import { entropyToMnemonic } from '@ethersproject/hdnode'
 
 export class Bridge extends L2Bridge {
@@ -156,7 +156,7 @@ export class Bridge extends L2Bridge {
 
     const inbox = await this.l1Bridge.getInbox()
     const bridgeAddress = await inbox.bridge()
-    const bridge = await BridgeFactory.connect(
+    const bridge = await Bridge__factory.connect(
       bridgeAddress,
       this.l1Bridge.l1Provider
     )
@@ -201,7 +201,7 @@ export class Bridge extends L2Bridge {
     calldataForL1: string,
     retryDelay = 500
   ): Promise<ContractReceipt> => {
-    const outbox = OutboxFactory.connect(
+    const outbox = Outbox__factory.connect(
       activeOutboxAddress,
       this.l1Bridge.l1Signer
     )
@@ -323,7 +323,7 @@ export class Bridge extends L2Bridge {
   public waitUntilOutboxEntryCreated = async (
     batchNumber: BigNumber,
     activeOutboxAddress: string,
-    retryDelay: number = 500
+    retryDelay = 500
   ): Promise<string> => {
     try {
       // if outbox entry not created yet, this reads from array out of bounds
