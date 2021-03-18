@@ -75,6 +75,8 @@ func main() {
 		log.Fatal(err)
 	}
 
+	log.Println("Eth url", rollupArgs)
+
 	log.Println("Launching aggregator for chain", rollupArgs.Address, "with chain id", message.ChainAddressToID(rollupArgs.Address))
 
 	var batcherMode rpc.BatcherMode
