@@ -1,4 +1,4 @@
-module github.com/offchainlabs/arbitrum/packages/arb-validator
+module github.com/dinhha/arbitrum/packages/arb-validator
 
 go 1.13
 
