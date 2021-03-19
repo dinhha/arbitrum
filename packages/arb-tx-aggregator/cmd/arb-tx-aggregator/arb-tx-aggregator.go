@@ -19,13 +19,14 @@ package main
 import (
 	"context"
 	"flag"
-	"github.com/offchainlabs/arbitrum/packages/arb-evm/message"
-	"github.com/offchainlabs/arbitrum/packages/arb-tx-aggregator/rpc"
-	"github.com/offchainlabs/arbitrum/packages/arb-validator-core/ethutils"
 	"log"
 	"os"
 	"path/filepath"
 	"time"
+
+	"github.com/offchainlabs/arbitrum/packages/arb-evm/message"
+	"github.com/offchainlabs/arbitrum/packages/arb-tx-aggregator/rpc"
+	"github.com/offchainlabs/arbitrum/packages/arb-validator-core/ethutils"
 
 	utils2 "github.com/offchainlabs/arbitrum/packages/arb-tx-aggregator/utils"
 	"github.com/offchainlabs/arbitrum/packages/arb-util/common"
@@ -36,6 +37,8 @@ import (
 )
 
 func main() {
+	print("hi there 3\n")
+
 	// Enable line numbers in logging
 	log.SetFlags(log.LstdFlags | log.Lshortfile)
 
@@ -110,6 +113,7 @@ func main() {
 	contractFile := filepath.Join(rollupArgs.ValidatorFolder, "contract.mexe")
 	dbPath := filepath.Join(rollupArgs.ValidatorFolder, "checkpoint_db")
 
+	print("?????//\n")
 	if err := rpc.LaunchAggregator(
 		ctx,
 		ethclint,

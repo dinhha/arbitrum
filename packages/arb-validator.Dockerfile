@@ -48,6 +48,7 @@ COPY --chown=user arb-validator-core/go.* /home/user/arb-validator-core/
 COPY --chown=user arb-checkpointer/go.* /home/user/arb-checkpointer/
 COPY --chown=user arb-evm/go.* /home/user/arb-evm/
 COPY --chown=user arb-tx-aggregator/go.* /home/user/arb-tx-aggregator/
+COPY --chown=user go-ethereum/go.* /home/user/go-ethereum/
 RUN cd arb-validator && go mod download && cd ../arb-tx-aggregator && go mod download
 
 # Copy source code
@@ -65,6 +66,7 @@ COPY --chown=user arb-avm-cpp/ /home/user/arb-avm-cpp/
 COPY --chown=user arb-checkpointer/ /home/user/arb-checkpointer/
 COPY --chown=user arb-validator/ /home/user/arb-validator/
 COPY --chown=user arb-tx-aggregator/ /home/user/arb-tx-aggregator/
+COPY --chown=user go-ethereum/ /home/user/go-ethereum/
 
 COPY --from=arb-avm-cpp /home/user/cmachine /home/user/arb-avm-cpp/cmachine/
 

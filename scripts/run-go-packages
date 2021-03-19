@@ -11,6 +11,7 @@ packages=(
     arb-evm
     arb-checkpointer
     arb-tx-aggregator
+    go-ethereum
 )
 
 cd packages

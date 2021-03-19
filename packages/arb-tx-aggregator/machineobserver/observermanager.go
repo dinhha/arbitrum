@@ -41,6 +41,7 @@ func ensureInitialized(
 	rollupAddr common.Address,
 ) error {
 	if err := db.Load(ctx); err != nil {
+		println("ensureInitialized err 1")
 		return err
 	}
 
@@ -51,45 +52,54 @@ func ensureInitialized(
 
 	rollupWatcher, err := clnt.NewRollupWatcher(rollupAddr)
 	if err != nil {
+		println("ensureInitialized err 2")
 		return err
 	}
 
 	inboxAddr, err := rollupWatcher.InboxAddress(ctx)
 	if err != nil {
+		println("ensureInitialized err 3")
 		return err
 	}
 
 	// We're starting from scratch. Process the messages from the partial block
 	inboxWatcher, err := clnt.NewGlobalInboxWatcher(inboxAddr, rollupAddr)
 	if err != nil {
+		println("ensureInitialized err 4")
 		return err
 	}
 
 	valueCache, err := cmachine.NewValueCache()
 	if err != nil {
+		println("ensureInitialized err 5")
 		return err
 	}
 
 	initialMachine, err := cp.GetInitialMachine(valueCache)
 	if err != nil {
+		println("ensureInitialized err 6")
 		return err
 	}
 
 	if err := rollupWatcher.VerifyArbChain(ctx, initialMachine.Hash()); err != nil {
+		println("ensureInitialized err 7")
 		return err
 	}
 
 	_, eventCreated, _, creationTimestamp, err := rollupWatcher.GetCreationInfo(ctx)
 	if err != nil {
+		println("ensureInitialized err 8")
 		return err
 	}
 
 	if err := db.AddInitialBlock(ctx, new(big.Int).Sub(eventCreated.BlockId.Height.AsInt(), big.NewInt(1))); err != nil {
+		println("ensureInitialized err 9")
 		return err
 	}
 
 	events, err := inboxWatcher.GetDeliveredEventsInBlock(ctx, eventCreated.BlockId, creationTimestamp)
 	if err != nil {
+		println("ensureInitialized err 10")
 		return err
 	}
 
@@ -129,28 +139,33 @@ func RunObserver(
 		false,
 	)
 	if err != nil {
+		println("obs: err 1")
 		return nil, err
 	}
 
 	if !cp.Initialized() {
 		if err := cp.Initialize(executablePath); err != nil {
+			println("obs: err 2")
 			return nil, err
 		}
 	}
 
 	rollupWatcher, err := clnt.NewRollupWatcher(rollupAddr)
 	if err != nil {
+		println("obs: err 3")
 		return nil, err
 	}
 
 	inboxAddr, err := rollupWatcher.InboxAddress(ctx)
 	if err != nil {
+		println("obs: err 4")
 		return nil, err
 	}
 
 	db := txdb.New(clnt, cp, cp.GetAggregatorStore(), rollupAddr)
 
 	if err := ensureInitialized(ctx, cp, db, clnt, rollupAddr); err != nil {
+		println("obs: err 5")
 		return nil, err
 	}
 
@@ -160,6 +175,7 @@ func RunObserver(
 
 			inboxWatcher, err := clnt.NewGlobalInboxWatcher(inboxAddr, rollupAddr)
 			if err != nil {
+				println("obs: err 6")
 				log.Fatal(err)
 			}
 

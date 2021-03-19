@@ -67,17 +67,21 @@ func LaunchAggregator(
 	maxBatchTime time.Duration,
 	batcherMode BatcherMode,
 ) error {
+	print("WTHHHHHHHHHHHhh\n")
 	arbClient := ethbridge.NewEthClient(client)
 	db, err := machineobserver.RunObserver(ctx, rollupAddress, arbClient, executable, dbPath)
 	if err != nil {
+		println("error1")
 		return err
 	}
 	rollupContract, err := arbClient.NewRollupWatcher(rollupAddress)
 	if err != nil {
+		println("error2")
 		return err
 	}
 	inboxAddress, err := rollupContract.InboxAddress(ctx)
 	if err != nil {
+		println("error3")
 		return err
 	}
 
@@ -86,6 +90,7 @@ func LaunchAggregator(
 	case ForwarderBatcherMode:
 		forwardClient, err := ethclient.DialContext(ctx, batcherMode.NodeURL)
 		if err != nil {
+			println("error4")
 			return err
 		}
 		batch = batcher.NewForwarder(forwardClient)
@@ -93,6 +98,7 @@ func LaunchAggregator(
 		authClient := ethbridge.NewEthAuthClient(client, batcherMode.Auth)
 		globalInbox, err := authClient.NewGlobalInbox(inboxAddress, rollupAddress)
 		if err != nil {
+			println("error5")
 			return err
 		}
 		batch = batcher.NewStatelessBatcher(ctx, rollupAddress, client, globalInbox, maxBatchTime)
@@ -100,6 +106,7 @@ func LaunchAggregator(
 		authClient := ethbridge.NewEthAuthClient(client, batcherMode.Auth)
 		globalInbox, err := authClient.NewGlobalInbox(inboxAddress, rollupAddress)
 		if err != nil {
+			println("error6")
 			return err
 		}
 		batch = batcher.NewStatefulBatcher(ctx, db, rollupAddress, client, globalInbox, maxBatchTime)
@@ -110,9 +117,11 @@ func LaunchAggregator(
 
 	web3Server, err := web3.GenerateWeb3Server(srv)
 	if err != nil {
+		println("error7")
 		return err
 	}
 
+	println("launching rpc", web3Server, web3RPCPort)
 	if web3RPCPort != "" {
 		go func() {
 			errChan <- utils2.LaunchRPC(web3Server, web3RPCPort, flags)

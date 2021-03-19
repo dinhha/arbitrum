@@ -4,46 +4,52 @@ import * as yargs from 'yargs'
 import * as fs from 'fs-extra'
 import { setupValidatorStates } from './setup_validators'
 import ArbFactoryJson from '../../arb-bridge-eth/build/contracts/ArbFactory.json'
-const Web3 = require("web3")
-const HDWalletProvider = require("@truffle/hdwallet-provider");
+const Web3 = require('web3')
+const HDWalletProvider = require('@truffle/hdwallet-provider')
 const arbConversion = new ArbConversion()
 
 const root = '../../'
 const rollupsPath = root + 'rollups/'
 import * as addresses from '../../arb-bridge-eth/bridge_eth_addresses.json'
 
-
 //Web3 setting
-const mnemonicPhrase = "digital unknown jealous mother legal hedgehog save glory december universe spread figure custom found six"
-let provider = new HDWalletProvider({
+const mnemonicPhrase =
+  'digital unknown jealous mother legal hedgehog save glory december universe spread figure custom found six'
+const provider = new HDWalletProvider({
   mnemonic: {
-    phrase: mnemonicPhrase
+    phrase: mnemonicPhrase,
   },
-  providerOrUrl: "https://testnet.sovryn.app/rpc"
-});
+  providerOrUrl: 'https://testnet.sovryn.app/rpc',
+})
 const web3 = new Web3(provider)
 
 async function setupRollup(arbOSData: string): Promise<string> {
   const arbOSHash = Program.programMachineHash(arbOSData)
   const accounts = await web3.eth.getAccounts()
-  const factoryAddress = addresses['contracts']['ArbFactory'].address;
+  const factoryAddress = addresses['contracts']['ArbFactory'].address
 
-  const factory = await new web3.eth.Contract(ArbFactoryJson.abi, factoryAddress)
+  const factory = await new web3.eth.Contract(
+    ArbFactoryJson.abi,
+    factoryAddress
+  )
   console.log(`Initializing rollup chain for machine with hash ${arbOSHash}`)
-  console.log('accounts', accounts);
+  console.log('accounts', accounts)
 
-  const tx = await factory.methods.createRollup(
-    arbOSHash,
-    arbConversion.blocksToTicks(30),
-    80000000,
-    10000000000,
-    ethers.utils.parseEther('.01'),
-    ethers.utils.hexZeroPad('0x', 20),
-    ethers.utils.hexZeroPad('0x', 20),
-    '0x',
-  ).send({ from: accounts[0] })
+  const tx = await factory.methods
+    .createRollup(
+      arbOSHash,
+      arbConversion.blocksToTicks(30),
+      80000000,
+      10000000000,
+      ethers.utils.parseEther('.01'),
+      ethers.utils.hexZeroPad('0x', 20),
+      ethers.utils.hexZeroPad('0x', 20),
+      '0x'
+    )
+    .send({ from: accounts[0] })
 
-  const rollupAddress = tx["events"]["RollupCreated"]["returnValues"]["rollupAddress"]
+  const rollupAddress =
+    tx['events']['RollupCreated']['returnValues']['rollupAddress']
 
   return rollupAddress
 }
@@ -53,13 +59,13 @@ async function initializeWallets(count: number): Promise<ethers.Wallet[]> {
   const wallets: ethers.Wallet[] = []
   // const waits = []
   for (let i = 0; i < count; i++) {
-    var newWallet = ethers.Wallet.createRandom()
-    var tx = {
+    const newWallet = ethers.Wallet.createRandom()
+    const tx = {
       to: newWallet.address,
       value: ethers.utils.parseEther('0.01'),
-      from: accounts[0]
+      from: accounts[0],
     }
-    var send = await web3.eth.sendTransaction(tx)
+    const send = await web3.eth.sendTransaction(tx)
     wallets.push(newWallet)
     // waits.push(send.wait())
   }
@@ -120,7 +126,7 @@ async function setupValidators(
   await setupValidatorStates(count, rollup, config)
 
   //await initializeClientWallets(rollup)
-  console.log("done");
+  console.log('done')
 }
 
 if (require.main === module) {
