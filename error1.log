@@ -1,0 +1,478 @@
+
+Successfully tagged arb-validator:latest
+Deploying 2 validators for rollup 0x066A80Ea2Db459D96a1a5B4288A0AFE2c915789f
+
+$ sudo docker-compose -f /home/ha.nguyen.02@ad.shiftasia.com/Projects/Sample/RIF/arbitrum.073/docker-compose.yml up
+Creating arbitrum073_arb-validator1_1    ... done
+Creating arbitrum073_arb-tx-aggregator_1 ... done
+Attaching to arbitrum073_arb-validator1_1, arbitrum073_arb-tx-aggregator_1
+arb-tx-aggregator_1  | hi there 3
+arb-tx-aggregator_1  | THIS IS LOCAL CLIENT ETH REPO
+arb-tx-aggregator_1  | 2021/03/23 02:25:10 arb-tx-aggregator.go:81: Eth url {state https://testnet.sovryn.app/rpc 0x066a80ea2db459d96a1a5b4288a0afe2c915789f}
+arb-tx-aggregator_1  | 2021/03/23 02:25:10 arb-tx-aggregator.go:83: Launching aggregator for chain 0x066a80ea2db459d96a1a5b4288a0afe2c915789f with chain id 193388571097247
+arb-validator1_1     | THIS IS LOCAL CLIENT ETH REPO
+arb-tx-aggregator_1  | 2021/03/23 02:25:10 arb-tx-aggregator.go:95: Aggregator submitting batches from address [76 110 167 230 15 32 246 165 178 177 55 157 122 185 113 114 123 82 149 194]
+arb-validator1_1     | 2021/03/23 02:25:24 announcerListener.go:34: AddedToChain
+arb-validator1_1     | 2021/03/23 02:25:25 manager.go:158: Starting validator from Block(1705384, 0xe6c2a846fb15dc00eccd9a1511655e923474fed645ff2b2520cef725f127bb2b)
+arb-validator1_1     | 2021/03/23 02:25:25 announcerListener.go:38: RestartingFromLatestValid
+arb-validator1_1     | 2021/03/23 02:25:25 opinionThread.go:38: Launching opinion thread
+arb-tx-aggregator_1  | launching rpc 0xc010c2f530 8547
+arb-tx-aggregator_1  | 2021/03/23 02:25:35 rpc.go:73: Launching rpc server over http
+arb-tx-aggregator_1  | 2021/03/23 02:25:35 rpc.go:73: Launching rpc server over http
+arb-validator1_1     | 2021/03/23 02:25:38 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:25:45 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:25:59 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-tx-aggregator_1  | 2021/03/23 02:25:59 observermanager.go:187: Starting observer after Block(1690570, 0x94150e0077f1bdddb662caba635de140723021ea254499d461590e7a8d8e03eb)
+arb-tx-aggregator_1  | 2021/03/23 02:26:00 observermanager.go:208: Getting events between 1690571 and 1690670 with 14925 blocks remaining
+arb-validator1_1     | 2021/03/23 02:26:04 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:26:10 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:26:15 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:26:20 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:26:29 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:26:34 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:26:40 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:26:45 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:26:51 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:27:19 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:27:29 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:27:50 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:28:16 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-tx-aggregator_1  | 2021/03/23 02:28:17 observermanager.go:208: Getting events between 1690671 and 1690770 with 14829 blocks remaining
+arb-validator1_1     | 2021/03/23 02:28:22 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:28:27 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:28:32 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:28:37 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:28:43 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:28:48 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:29:18 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:29:23 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:29:29 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:29:37 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:29:48 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:29:53 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:29:59 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:30:04 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-tx-aggregator_1  | 2021/03/23 02:30:05 observermanager.go:208: Getting events between 1690771 and 1690870 with 14732 blocks remaining
+arb-validator1_1     | 2021/03/23 02:30:10 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:30:15 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:30:21 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:30:27 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:30:32 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | error 92021/03/23 02:30:34 manager.go:321: Error getting new header: reorg occured
+arb-validator1_1     | 2021/03/23 02:30:35 announcerListener.go:34: AddedToChain
+arb-validator1_1     | 2021/03/23 02:30:36 manager.go:158: Starting validator from Block(1705496, 0xe4b6ec5f5cd87695a7b9b533b7953344c6b9315e253b9471662d3748cbfef4d0)
+arb-validator1_1     | 2021/03/23 02:30:36 announcerListener.go:38: RestartingFromLatestValid
+arb-validator1_1     | 2021/03/23 02:30:36 opinionThread.go:38: Launching opinion thread
+arb-validator1_1     | 2021/03/23 02:30:43 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:30:49 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:30:50 manager.go:270: Now at head
+arb-validator1_1     | 2021/03/23 02:30:50 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:30:50 opinionThread.go:248: Prepared assertion of 2380828 steps, from 0x87ec7e22f108e912ad996ce8d5ae087e9e94e449d9a01ffcc3ca59384b5c3b82 to 0xcb1ec4235bff407dc86904bc20f17582ac5f5d6726352d59cb63a531d817acfa with block reason InboxBlocked on top of leaf 0x5c0ce71a296e90a7df8d29992cbba5426b66d651328e57d17a104812de3faffe
+arb-validator1_1     | 2021/03/23 02:30:51 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:30:51 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:30:51 validatorChainListener.go:210: No stake is currently down, so setting up a stake
+arb-validator1_1     | 2021/03/23 02:30:51 validatorChainListener.go:101: Placing stake for 0x4e28cb9f0effa9789d134ae65fd81175556db11b
+arb-validator1_1     | 2021/03/23 02:30:52 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:30:52 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:30:52 validatorChainListener.go:206: Thinking about placing stake 1705505 1705508
+arb-validator1_1     | 2021/03/23 02:30:53 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:30:53 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:30:53 validatorChainListener.go:206: Thinking about placing stake 1705505 1705508
+arb-validator1_1     | 2021/03/23 02:30:54 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:30:54 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:30:54 validatorChainListener.go:206: Thinking about placing stake 1705505 1705508
+arb-validator1_1     | 2021/03/23 02:30:55 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:30:55 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:30:55 validatorChainListener.go:206: Thinking about placing stake 1705505 1705508
+arb-validator1_1     | 2021/03/23 02:30:56 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:30:56 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:30:56 validatorChainListener.go:206: Thinking about placing stake 1705505 1705508
+arb-validator1_1     | 2021/03/23 02:30:57 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:30:57 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:30:57 validatorChainListener.go:206: Thinking about placing stake 1705505 1705508
+arb-validator1_1     | 2021/03/23 02:30:58 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:30:58 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:30:58 validatorChainListener.go:206: Thinking about placing stake 1705505 1705508
+arb-validator1_1     | 2021/03/23 02:30:59 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:30:59 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:30:59 validatorChainListener.go:206: Thinking about placing stake 1705505 1705508
+arb-validator1_1     | 2021/03/23 02:31:00 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:00 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:00 validatorChainListener.go:206: Thinking about placing stake 1705505 1705508
+arb-validator1_1     | 2021/03/23 02:31:01 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:01 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:01 validatorChainListener.go:206: Thinking about placing stake 1705505 1705508
+arb-validator1_1     | 2021/03/23 02:31:02 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:02 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:02 validatorChainListener.go:206: Thinking about placing stake 1705505 1705508
+arb-validator1_1     | 2021/03/23 02:31:03 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:03 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:03 validatorChainListener.go:206: Thinking about placing stake 1705505 1705508
+arb-validator1_1     | 2021/03/23 02:31:04 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:04 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:04 validatorChainListener.go:206: Thinking about placing stake 1705505 1705508
+arb-validator1_1     | 2021/03/23 02:31:05 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:05 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:05 validatorChainListener.go:206: Thinking about placing stake 1705505 1705508
+arb-validator1_1     | 2021/03/23 02:31:06 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:06 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:07 validatorChainListener.go:206: Thinking about placing stake 1705505 1705508
+arb-validator1_1     | 2021/03/23 02:31:07 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:07 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:07 validatorChainListener.go:206: Thinking about placing stake 1705505 1705508
+arb-validator1_1     | 2021/03/23 02:31:08 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:08 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:08 validatorChainListener.go:206: Thinking about placing stake 1705505 1705508
+arb-validator1_1     | 2021/03/23 02:31:09 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:09 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:09 validatorChainListener.go:206: Thinking about placing stake 1705505 1705508
+arb-validator1_1     | 2021/03/23 02:31:10 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:10 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:10 validatorChainListener.go:206: Thinking about placing stake 1705505 1705508
+arb-validator1_1     | 2021/03/23 02:31:11 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:11 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:11 validatorChainListener.go:206: Thinking about placing stake 1705505 1705508
+arb-validator1_1     | 2021/03/23 02:31:12 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:12 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:13 validatorChainListener.go:206: Thinking about placing stake 1705506 1705508
+arb-validator1_1     | 2021/03/23 02:31:13 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:13 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:13 validatorChainListener.go:210: No stake is currently down, so setting up a stake
+arb-validator1_1     | 2021/03/23 02:31:13 validatorChainListener.go:101: Placing stake for 0x4e28cb9f0effa9789d134ae65fd81175556db11b
+arb-validator1_1     | 2021/03/23 02:31:13 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:31:14 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:14 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:14 validatorChainListener.go:206: Thinking about placing stake 1705506 1705509
+arb-validator1_1     | 2021/03/23 02:31:15 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:15 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:15 validatorChainListener.go:206: Thinking about placing stake 1705506 1705509
+arb-tx-aggregator_1  | 2021/03/23 02:31:15 observermanager.go:208: Getting events between 1690871 and 1690970 with 14635 blocks remaining
+arb-validator1_1     | 2021/03/23 02:31:16 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:16 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:16 validatorChainListener.go:206: Thinking about placing stake 1705506 1705509
+arb-validator1_1     | 2021/03/23 02:31:17 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:17 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:17 validatorChainListener.go:206: Thinking about placing stake 1705506 1705509
+arb-validator1_1     | 2021/03/23 02:31:18 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:18 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:18 validatorChainListener.go:206: Thinking about placing stake 1705506 1705509
+arb-validator1_1     | 2021/03/23 02:31:19 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:19 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:19 validatorChainListener.go:206: Thinking about placing stake 1705506 1705509
+arb-validator1_1     | 2021/03/23 02:31:20 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:20 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:20 validatorChainListener.go:206: Thinking about placing stake 1705506 1705509
+arb-validator1_1     | 2021/03/23 02:31:21 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:21 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:22 validatorChainListener.go:206: Thinking about placing stake 1705506 1705509
+arb-validator1_1     | 2021/03/23 02:31:22 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:22 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:22 validatorChainListener.go:206: Thinking about placing stake 1705506 1705509
+arb-validator1_1     | 2021/03/23 02:31:23 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:23 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:23 validatorChainListener.go:206: Thinking about placing stake 1705506 1705509
+arb-validator1_1     | 2021/03/23 02:31:24 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:24 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:24 validatorChainListener.go:206: Thinking about placing stake 1705506 1705509
+arb-validator1_1     | 2021/03/23 02:31:25 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:25 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:25 validatorChainListener.go:206: Thinking about placing stake 1705506 1705509
+arb-validator1_1     | 2021/03/23 02:31:26 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:26 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:26 validatorChainListener.go:206: Thinking about placing stake 1705506 1705509
+arb-validator1_1     | 2021/03/23 02:31:27 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:27 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:27 validatorChainListener.go:206: Thinking about placing stake 1705506 1705509
+arb-validator1_1     | 2021/03/23 02:31:28 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:28 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:29 validatorChainListener.go:206: Thinking about placing stake 1705506 1705509
+arb-validator1_1     | 2021/03/23 02:31:29 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:29 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:29 validatorChainListener.go:206: Thinking about placing stake 1705506 1705509
+arb-validator1_1     | 2021/03/23 02:31:30 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:30 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:30 validatorChainListener.go:206: Thinking about placing stake 1705506 1705509
+arb-validator1_1     | 2021/03/23 02:31:31 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:31 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:31 validatorChainListener.go:206: Thinking about placing stake 1705506 1705509
+arb-validator1_1     | 2021/03/23 02:31:32 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:32 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:32 validatorChainListener.go:206: Thinking about placing stake 1705506 1705509
+arb-validator1_1     | 2021/03/23 02:31:33 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:33 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:33 validatorChainListener.go:206: Thinking about placing stake 1705506 1705509
+arb-validator1_1     | 2021/03/23 02:31:34 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:34 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:34 validatorChainListener.go:206: Thinking about placing stake 1705506 1705509
+arb-validator1_1     | 2021/03/23 02:31:35 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:35 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:35 validatorChainListener.go:206: Thinking about placing stake 1705506 1705509
+arb-validator1_1     | 2021/03/23 02:31:36 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:36 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:36 validatorChainListener.go:206: Thinking about placing stake 1705506 1705509
+arb-validator1_1     | 2021/03/23 02:31:37 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:37 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:37 validatorChainListener.go:206: Thinking about placing stake 1705506 1705509
+arb-validator1_1     | 2021/03/23 02:31:38 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:38 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:38 validatorChainListener.go:206: Thinking about placing stake 1705506 1705509
+arb-validator1_1     | 2021/03/23 02:31:39 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:39 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:39 validatorChainListener.go:206: Thinking about placing stake 1705507 1705509
+arb-validator1_1     | 2021/03/23 02:31:40 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:40 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:40 validatorChainListener.go:206: Thinking about placing stake 1705507 1705509
+arb-validator1_1     | 2021/03/23 02:31:41 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:31:41 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:41 validatorChainListener.go:191: Maybe putting down stake
+arb-validator1_1     | 2021/03/23 02:31:41 validatorChainListener.go:206: Thinking about placing stake 1705507 1705509
+arb-validator1_1     | 2021/03/23 02:31:41 announcerListener.go:42:  Staker 0x4e28cb9f0effa9789d134ae65fd81175556db11b created at 0x5c0ce71a296e90a7df8d29992cbba5426b66d651328e57d17a104812de3faffe
+arb-validator1_1     | 2021/03/23 02:31:42 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:42 validatorChainListener.go:176: 0x4e28cb9f0effa9789d134ae65fd81175556db11b is making an assertion
+arb-validator1_1     | 2021/03/23 02:31:43 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:44 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:45 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:46 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:47 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:48 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:49 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:50 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:51 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:52 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:53 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:54 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:55 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:56 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:57 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:58 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:59 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:31:59 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed stake:4e28cb
+arb-validator1_1     | == stakers:
+arb-validator1_1     | ==   depth:0 addr:4e28cb created:1705507.000 loc:5c0ce7
+arb-validator1_1     | 2021/03/23 02:32:00 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:01 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:02 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:03 validatorChainListener.go:219: Error placing stake transaction PlaceStake failed: 500 Internal Server Error: {"jsonrpc":"2.0","id":329,"error":{"code":-32015,"message":"VM execution error: transaction reverted"}}
+arb-validator1_1     |
+arb-validator1_1     | 2021/03/23 02:32:03 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:04 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:05 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:06 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:07 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:08 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:09 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:10 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:11 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:12 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:13 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:13 validatorChainListener.go:176: 0x4e28cb9f0effa9789d134ae65fd81175556db11b is making an assertion
+arb-validator1_1     | 2021/03/23 02:32:14 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:15 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:16 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:17 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:18 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:19 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:20 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:21 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:22 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:23 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:24 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:25 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:26 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:27 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:28 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:29 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:30 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:31 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:32 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:33 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:34 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:35 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:36 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:37 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:38 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:39 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:40 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:41 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:42 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:43 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:44 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:45 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:46 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:32:47 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | error 92021/03/23 02:32:47 manager.go:321: Error getting new header: reorg occured
+arb-validator1_1     | 2021/03/23 02:32:47 validatorChainListener.go:180: Error making assertion receipt not found
+arb-validator1_1     | 2021/03/23 02:32:47 validatorChainListener.go:180: Error making assertion Post https://testnet.sovryn.app/rpc: context canceled
+arb-validator1_1     | 2021/03/23 02:32:49 announcerListener.go:34: AddedToChain
+arb-validator1_1     | 2021/03/23 02:32:50 manager.go:158: Starting validator from Block(1705506, 0x179f6da0d7c168b807fef8b07b25fa71fcd18703c9eb9c9e2e5104b1c5afbbf4)
+arb-validator1_1     | 2021/03/23 02:32:50 announcerListener.go:38: RestartingFromLatestValid
+arb-validator1_1     | 2021/03/23 02:32:50 opinionThread.go:38: Launching opinion thread
+arb-tx-aggregator_1  | 2021/03/23 02:32:50 observermanager.go:208: Getting events between 1690971 and 1691070 with 14538 blocks remaining
+arb-validator1_1     | 2021/03/23 02:32:59 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed
+arb-validator1_1     | == stakers:
+arb-validator1_1     | 2021/03/23 02:33:01 announcerListener.go:42:  Staker 0x4e28cb9f0effa9789d134ae65fd81175556db11b created at 0x5c0ce71a296e90a7df8d29992cbba5426b66d651328e57d17a104812de3faffe
+arb-validator1_1     | 2021/03/23 02:33:03 manager.go:270: Now at head
+arb-validator1_1     | 2021/03/23 02:33:03 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed stake:4e28cb
+arb-validator1_1     | == stakers:
+arb-validator1_1     | ==   depth:0 addr:4e28cb created:1705507.000 loc:5c0ce7
+arb-validator1_1     | 2021/03/23 02:33:03 opinionThread.go:248: Prepared assertion of 2380828 steps, from 0x87ec7e22f108e912ad996ce8d5ae087e9e94e449d9a01ffcc3ca59384b5c3b82 to 0xcb1ec4235bff407dc86904bc20f17582ac5f5d6726352d59cb63a531d817acfa with block reason InboxBlocked on top of leaf 0x5c0ce71a296e90a7df8d29992cbba5426b66d651328e57d17a104812de3faffe
+arb-validator1_1     | 2021/03/23 02:33:04 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:33:04 validatorChainListener.go:176: 0x4e28cb9f0effa9789d134ae65fd81175556db11b is making an assertion
+arb-validator1_1     | 2021/03/23 02:33:05 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:33:06 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:33:07 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:33:08 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:33:09 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:33:10 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:33:11 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:33:12 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 leaf calculatedValidNode knownValidNode latestConfirmed stake:4e28cb
+arb-validator1_1     | == stakers:
+arb-validator1_1     | ==   depth:0 addr:4e28cb created:1705507.000 loc:5c0ce7
+arb-validator1_1     | 2021/03/23 02:33:12 announcerListener.go:99:  AssertionPrepared
+arb-validator1_1     | 2021/03/23 02:33:13 announcerListener.go:76:  SawAssertion on leaf 0x5c0ce71a296e90a7df8d29992cbba5426b66d651328e57d17a104812de3faffe
+arb-validator1_1     | 2021/03/23 02:33:13 announcerListener.go:77:  Params: AssertionParams(NumSteps: 2380828, ImportedCount: 1)
+arb-validator1_1     | 2021/03/23 02:33:13 announcerListener.go:50:  Staker 0x4e28cb9f0effa9789d134ae65fd81175556db11b moved to location: 0x9c4d52ac55df1d23601732872865cdf824659477e11d0955ef6892448ea9d63d
+arb-validator1_1     | 2021/03/23 02:33:13 opinionThread.go:47: Building opinion on top of 0x5c0ce71a296e90a7df8d29992cbba5426b66d651328e57d17a104812de3faffe
+arb-validator1_1     | 2021/03/23 02:33:13 opinionThread.go:115: Formed opinion that 2 0x9c4d52ac55df1d23601732872865cdf824659477e11d0955ef6892448ea9d63d is the successor of 0x5c0ce71a296e90a7df8d29992cbba5426b66d651328e57d17a104812de3faffe with after hash 0xcb1ec4235bff407dc86904bc20f17582ac5f5d6726352d59cb63a531d817acfa
+arb-validator1_1     | 2021/03/23 02:33:13 announcerListener.go:115:  AdvancedKnownNode
+arb-validator1_1     | 2021/03/23 02:33:56 validatorChainListener.go:180: Error making assertion transaction MakeAssertion failed: 500 Internal Server Error: {"jsonrpc":"2.0","id":408,"error":{"code":-32015,"message":"VM execution error: transaction reverted"}}
+arb-validator1_1     |
+arb-validator1_1     | 2021/03/23 02:33:56 manager.go:276:
+arb-validator1_1     | == nodes:
+arb-validator1_1     | ==   0:5c0ce7 latestConfirmed
+arb-validator1_1     | ==     0:a4c582 leaf
+arb-validator1_1     | ==     1:834860 leaf
+arb-validator1_1     | ==     2:9c4d52 leaf calculatedValidNode knownValidNode stake:4e28cb
+arb-validator1_1     | == stakers:
+arb-validator1_1     | ==   depth:1 addr:4e28cb created:1705507.000 loc:9c4d52
+^CGracefully stopping... (press Ctrl+C again to force)
+Stopping arbitrum073_arb-tx-aggregator_1 ... done
+Stopping arbitrum073_arb-validator1_1    ... done
