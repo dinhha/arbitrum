@@ -1,0 +1,49 @@
+Deploying 2 validators for rollup 0x066A80Ea2Db459D96a1a5B4288A0AFE2c915789f
+
+$ sudo docker-compose -f /home/ha.nguyen.02@ad.shiftasia.com/Projects/Sample/RIF/arbitrum.073/docker-compose.yml up
+Creating arbitrum073_arb-validator1_1    ... done
+Creating arbitrum073_arb-tx-aggregator_1 ... done
+Attaching to arbitrum073_arb-validator1_1, arbitrum073_arb-tx-aggregator_1
+arb-tx-aggregator_1  | hi there 3
+arb-tx-aggregator_1  | THIS IS LOCAL CLIENT REPO
+arb-tx-aggregator_1  | 2021/03/23 01:40:01 arb-tx-aggregator.go:81: Eth url {state https://testnet.sovryn.app/rpc 0x066a80ea2db459d96a1a5b4288a0afe2c915789f}
+arb-tx-aggregator_1  | 2021/03/23 01:40:01 arb-tx-aggregator.go:83: Launching aggregator for chain 0x066a80ea2db459d96a1a5b4288a0afe2c915789f with chain id 193388571097247
+arb-validator1_1     | THIS IS LOCAL CLIENT REPO
+arb-tx-aggregator_1  | 2021/03/23 01:40:02 arb-tx-aggregator.go:95: Aggregator submitting batches from address [76 110 167 230 15 32 246 165 178 177 55 157 122 185 113 114 123 82 149 194]
+arb-tx-aggregator_1  | ?????//
+arb-tx-aggregator_1  | WTHHHHHHHHHHHhh
+arb-tx-aggregator_1  | {"jsonrpc":"2.0","id":5,"method":"eth_getLogs","params":[{"address":["0x066a80ea2db459d96a1a5b4288a0afe2c915789f"],"fromBlock":"0x0","toBlock":"latest","topics":[["0x3f3efae8ec7ea5f2d06aa37b37bb676f94c915ba05679d32ccdd0dc570dd5864"]]}]}
+arb-validator1_1     | {"jsonrpc":"2.0","id":6,"method":"eth_getLogs","params":[{"address":["0x066a80ea2db459d96a1a5b4288a0afe2c915789f"],"fromBlock":"0x0","toBlock":"latest","topics":[["0x3f3efae8ec7ea5f2d06aa37b37bb676f94c915ba05679d32ccdd0dc570dd5864"]]}]}
+arb-tx-aggregator_1  | Filter logs result [{[6 106 128 234 45 180 89 217 106 26 91 66 136 160 175 226 201 21 120 159] [[63 62 250 232 236 126 165 242 208 106 163 123 55 187 103 111 148 201 21 186 5 103 157 50 204 221 13 197 112 221 88 100]] [135 236 126 34 241 8 233 18 173 153 108 232 213 174 8 126 158 148 228 73 217 160 31 252 195 202 89 56 75 92 59 130 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 117 48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 196 180 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 84 11 228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 35 134 242 111 193 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 224 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0] 1690570 [248 82 142 153 164 7 153 103 57 174 102 71 113 19 117 55 39 35 125 222 168 241 23 231 3 122 37 85 2 24 169 79] 0 [148 21 14 0 119 241 189 221 182 98 202 186 99 93 225 64 114 48 33 234 37 68 153 212 97 89 14 122 141 142 3 235] 0 false}]
+arb-tx-aggregator_1  | {"jsonrpc":"2.0","id":7,"method":"eth_getLogs","params":[{"address":["0x066a80ea2db459d96a1a5b4288a0afe2c915789f"],"fromBlock":"0x0","toBlock":"latest","topics":[["0x3f3efae8ec7ea5f2d06aa37b37bb676f94c915ba05679d32ccdd0dc570dd5864"]]}]}
+arb-tx-aggregator_1  | Filter logs result [{[6 106 128 234 45 180 89 217 106 26 91 66 136 160 175 226 201 21 120 159] [[63 62 250 232 236 126 165 242 208 106 163 123 55 187 103 111 148 201 21 186 5 103 157 50 204 221 13 197 112 221 88 100]] [135 236 126 34 241 8 233 18 173 153 108 232 213 174 8 126 158 148 228 73 217 160 31 252 195 202 89 56 75 92 59 130 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 117 48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 196 180 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 84 11 228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 35 134 242 111 193 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 224 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0] 1690570 [248 82 142 153 164 7 153 103 57 174 102 71 113 19 117 55 39 35 125 222 168 241 23 231 3 122 37 85 2 24 169 79] 0 [148 21 14 0 119 241 189 221 182 98 202 186 99 93 225 64 114 48 33 234 37 68 153 212 97 89 14 122 141 142 3 235] 0 false}]
+arb-validator1_1     | Filter logs result [{[6 106 128 234 45 180 89 217 106 26 91 66 136 160 175 226 201 21 120 159] [[63 62 250 232 236 126 165 242 208 106 163 123 55 187 103 111 148 201 21 186 5 103 157 50 204 221 13 197 112 221 88 100]] [135 236 126 34 241 8 233 18 173 153 108 232 213 174 8 126 158 148 228 73 217 160 31 252 195 202 89 56 75 92 59 130 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 117 48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 196 180 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 84 11 228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 35 134 242 111 193 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 224 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0] 1690570 [248 82 142 153 164 7 153 103 57 174 102 71 113 19 117 55 39 35 125 222 168 241 23 231 3 122 37 85 2 24 169 79] 0 [148 21 14 0 119 241 189 221 182 98 202 186 99 93 225 64 114 48 33 234 37 68 153 212 97 89 14 122 141 142 3 235] 0 false}]
+arb-tx-aggregator_1  | GI getLogs
+arb-tx-aggregator_1  | {"jsonrpc":"2.0","id":10,"method":"eth_getLogs","params":[{"address":["0x379118501b2f652aea3ce8813b126742bb95df6a"],"blockHash":"0x94150e0077f1bdddb662caba635de140723021ea254499d461590e7a8d8e03eb","topics":[["0x35e48d636f39df5c5ca2278452d6d89bf9f07c2ff15f46d08aa402c46638b882","0xe923069519faf69b0726ed766a213f61b6f07f2ecf11d55582cc440d8806b0bc"],["0x000000000000000000000000066a80ea2db459d96a1a5b4288a0afe2c915789f"]]}]}
+arb-tx-aggregator_1  | Filter logs result []
+arb-tx-aggregator_1  | ensureInitialized err 10
+arb-tx-aggregator_1  | obs: err 5
+arb-tx-aggregator_1  | error1
+arb-tx-aggregator_1  | 2021/03/23 01:40:25 arb-tx-aggregator.go:129: 500 Internal Server Error: {"jsonrpc":"2.0","id":10,"error":{"code":-32603,"message":"Internal server error"}}
+arbitrum073_arb-tx-aggregator_1 exited with code 1
+arb-validator1_1     | 2021/03/23 01:40:26 announcerListener.go:34: AddedToChain
+arb-validator1_1     | 2021/03/23 01:40:27 manager.go:158: Starting validator from Block(1705295, 0x1512327a702b44705463f140927cd4a9efef410ebf528364cf11d52788eb911c)
+arb-validator1_1     | 2021/03/23 01:40:27 announcerListener.go:38: RestartingFromLatestValid
+arb-validator1_1     | 2021/03/23 01:40:27 opinionThread.go:38: Launching opinion thread
+arb-validator1_1     | 2021/03/23 01:40:28 manager.go:190: Getting events between 1705295 and 1705307
+arb-validator1_1     | GI getLogs
+arb-validator1_1     | {"jsonrpc":"2.0","id":9,"method":"eth_getLogs","params":[{"address":["0x379118501b2f652aea3ce8813b126742bb95df6a"],"fromBlock":"0x1a054f","toBlock":"0x1a055b","topics":[["0x35e48d636f39df5c5ca2278452d6d89bf9f07c2ff15f46d08aa402c46638b882","0xe923069519faf69b0726ed766a213f61b6f07f2ecf11d55582cc440d8806b0bc"],["0x000000000000000000000000066a80ea2db459d96a1a5b4288a0afe2c915789f"]]}]}
+arb-validator1_1     | Filter logs result []
+arb-validator1_1     | {"jsonrpc":"2.0","id":10,"method":"eth_getLogs","params":[{"address":["0x066a80ea2db459d96a1a5b4288a0afe2c915789f"],"fromBlock":"0x1a054f","toBlock":"0x1a055b","topics":[["0xcbafbb223ed21c82af9e2ad20cdfdf55d3263d06f9a65b3f70da613f32d81f88","0x6c69257ddf620994c6fb9e5304db0e5563db3765bee033ddd61b6a1caa7d043f","0x468aa7d460319b17466ca163bca353a0c62fff0d7d0fa287f634ef305d946f29","0x953ab9eece73c907353307064109cf873462177a0e358e463fd89f5b206daa6c","0x3d3e2ada9638548d1bb115fd766ef675213d953efe8d433bbd8d6718f4490950","0xbe690ac5fe353c094bcc6f187eeb841c0ca61b6edf32c142eadad655b7d173f4","0x3112f8dec1eebe04bc7f92bf1031a1c749e09e57836222fef69df63d591bf603","0x9d13d0ad532ca8e545a3b66828cb99a18c3bc98e2a50b4db1990a033fdba6f63","0xded5fa103431438087188a5f8c6a4c3ea90996bbd63be7b1b3fa0a425b37fdd5"]]}]}
+arb-validator1_1     | Filter logs result []
+arb-validator1_1     | GI getLogs
+arb-validator1_1     | {"jsonrpc":"2.0","id":12,"method":"eth_getLogs","params":[{"address":["0x379118501b2f652aea3ce8813b126742bb95df6a"],"blockHash":"0x69484293b66e5c3976a314c69d803429cba6e02c5ebdea6ed2e1784178531972","topics":[["0x35e48d636f39df5c5ca2278452d6d89bf9f07c2ff15f46d08aa402c46638b882","0xe923069519faf69b0726ed766a213f61b6f07f2ecf11d55582cc440d8806b0bc"],["0x000000000000000000000000066a80ea2db459d96a1a5b4288a0afe2c915789f"]]}]}
+arb-validator1_1     | Filter logs result []
+arb-validator1_1     | error 122021/03/23 01:40:33 manager.go:321: Manager hit error getting inbox events with block Block(1705308, 0x69484293b66e5c3976a314c69d803429cba6e02c5ebdea6ed2e1784178531972): 500 Internal Server Error: {"jsonrpc":"2.0","id":12,"error":{"code":-32603,"message":"Internal server error"}}
+arb-validator1_1     |
+arb-validator1_1     | 2021/03/23 01:40:35 announcerListener.go:34: AddedToChain
+arb-validator1_1     | 2021/03/23 01:40:36 manager.go:158: Starting validator from Block(1705308, 0x69484293b66e5c3976a314c69d803429cba6e02c5ebdea6ed2e1784178531972)
+arb-validator1_1     | 2021/03/23 01:40:36 announcerListener.go:38: RestartingFromLatestValid
+arb-validator1_1     | 2021/03/23 01:40:36 opinionThread.go:38: Launching opinion thread
+^CGracefully stopping... (press Ctrl+C again to force)
+Stopping arbitrum073_arb-validator1_1    ... done
