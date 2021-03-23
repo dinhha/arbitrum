@@ -88,17 +88,16 @@ func (gi *globalInboxWatcher) getLogs(
 		addressIndex[:],
 		ethcommon.LeftPadBytes(gi.rollupAddress.Bytes(), 32),
 	)
-	println("GI getLogs")
-	println("fromBlock", fromBlock, "\ntoblock", toBlock, "\nblock hash", blockHash, "\nAddresses", []ethcommon.Address{gi.inboxAddress})
-	println("topics", [][]ethcommon.Hash{
-		{
-			messageDeliveredID,
-			messageDeliveredFromOriginID,
-		}, {
-			addressIndex,
-		},
-	})
-	println(gi.client.FilterLogs)
+	//println("GI getLogs")
+	//println("fromBlock", fromBlock, "\ntoblock", toBlock, "\nblock hash", blockHash, "\nAddresses", []ethcommon.Address{gi.inboxAddress})
+	//println("topics", [][]ethcommon.Hash{
+	//	{
+	//		messageDeliveredID,
+	//		messageDeliveredFromOriginID,
+	//	}, {
+	//		addressIndex,
+	//	},
+	//})
 
 	return gi.client.FilterLogs(ctx, ethereum.FilterQuery{
 		FromBlock: fromBlock,
@@ -163,8 +162,9 @@ func (gi *globalInboxWatcher) GetDeliveredEventsInBlock(
 	blockId *common.BlockId,
 	timestamp *big.Int,
 ) ([]arbbridge.MessageDeliveredEvent, error) {
-	bh := blockId.HeaderHash.ToEthHash()
-	inboxLogs, err := gi.getLogs(ctx, nil, nil, &bh)
+	//println(fmt.Sprintf("GetDeliveredEventsInBlock %v", blockId))
+	//bh := blockId.HeaderHash.ToEthHash()
+	inboxLogs, err := gi.getLogs(ctx, blockId.Height.AsInt(), blockId.Height.AsInt(), nil)
 	if err != nil {
 		return nil, err
 	}

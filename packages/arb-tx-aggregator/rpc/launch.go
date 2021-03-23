@@ -67,7 +67,6 @@ func LaunchAggregator(
 	maxBatchTime time.Duration,
 	batcherMode BatcherMode,
 ) error {
-	print("WTHHHHHHHHHHHhh\n")
 	arbClient := ethbridge.NewEthClient(client)
 	db, err := machineobserver.RunObserver(ctx, rollupAddress, arbClient, executable, dbPath)
 	if err != nil {

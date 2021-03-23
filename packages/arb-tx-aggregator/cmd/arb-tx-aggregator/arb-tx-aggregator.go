@@ -113,7 +113,6 @@ func main() {
 	contractFile := filepath.Join(rollupArgs.ValidatorFolder, "contract.mexe")
 	dbPath := filepath.Join(rollupArgs.ValidatorFolder, "checkpoint_db")
 
-	print("?????//\n")
 	if err := rpc.LaunchAggregator(
 		ctx,
 		ethclint,

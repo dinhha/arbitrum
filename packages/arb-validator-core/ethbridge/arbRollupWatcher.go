@@ -115,9 +115,11 @@ func (vm *ethRollupWatcher) GetEvents(
 	blockId *common.BlockId,
 	_ *big.Int,
 ) ([]arbbridge.Event, error) {
-	bh := blockId.HeaderHash.ToEthHash()
+	//bh := blockId.HeaderHash.ToEthHash()
 	rollupLogs, err := vm.client.FilterLogs(ctx, ethereum.FilterQuery{
-		BlockHash: &bh,
+		//BlockHash: &bh,
+		FromBlock: blockId.Height.AsInt(),
+		ToBlock:   blockId.Height.AsInt(),
 		Addresses: []ethcommon.Address{vm.rollupAddress},
 		Topics:    vm.generateTopics(),
 	})

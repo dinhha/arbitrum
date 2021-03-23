@@ -76,6 +76,14 @@ module.exports = {
     parity: {
       url: 'http://127.0.0.1:7545',
     },
+    local: {
+      url: 'http://localhost:4444',
+      accounts: [
+        '0xa5ad65db871341df56c7cabf5ef673d8fca3530f1e98087cd2659a1e868b52ad',
+      ],
+      network_id: 31,
+      confirmations: 3,
+    },
     rsktestnet: {
       url: 'https://testnet.sovryn.app/rpc',
       accounts: [
@@ -107,3 +115,5 @@ module.exports = {
     apiKey: process.env['ETHERSCAN_API_KEY'],
   },
 }
+
+

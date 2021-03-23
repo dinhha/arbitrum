@@ -78,9 +78,11 @@ func newInboxTopChallengeWatcher(address ethcommon.Address, client ethutils.EthC
 }
 
 func (c *inboxTopChallengeWatcher) GetEvents(ctx context.Context, blockId *common.BlockId, timestamp *big.Int) ([]arbbridge.Event, error) {
-	bh := blockId.HeaderHash.ToEthHash()
+	//bh := blockId.HeaderHash.ToEthHash()
 	logs, err := c.client.FilterLogs(ctx, ethereum.FilterQuery{
-		BlockHash: &bh,
+		//BlockHash: &bh,
+		FromBlock: blockId.Height.AsInt(),
+		ToBlock:   blockId.Height.AsInt(),
 		Addresses: []ethcommon.Address{c.address},
 		Topics:    c.topics,
 	})
