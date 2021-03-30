@@ -22,5 +22,3 @@ replace github.com/offchainlabs/arbitrum/packages/arb-util => ../arb-util
 replace github.com/offchainlabs/arbitrum/packages/arb-validator-core => ../arb-validator-core
 
 replace github.com/offchainlabs/arbitrum/packages/arb-checkpointer => ../arb-checkpointer
-
-replace github.com/ethereum/go-ethereum => ../go-ethereum
